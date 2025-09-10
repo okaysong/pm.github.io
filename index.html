@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Song Qingliang · Product Manager</title>
+  <meta name="description" content="Song Qingliang — 产品经理，专注电子商务、产品与数据分析。联系：pm@songqingliang.com" />
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --text: #111827;
+      --radius: 12px;
+      --maxw: 900px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.65;
+    }
+    .wrap { width: 100%; max-width: var(--maxw); }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius);
+      background: #e0e7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--accent);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+    .title h1 { font-size: 22px; margin-bottom: 4px; }
+    .title p { font-size: 14px; color: var(--muted); }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    p, li { font-size: 15px; margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+      color: var(--muted);
+      margin: 6px 0;
+      font-size: 14px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+      gap: 12px;
+    }
+    .link-item {
+      background: #f3f4f6;
+      padding: 12px;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    /* 时间轴样式 */
+    .timeline {
+      position: relative;
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 3px solid #e5e7eb;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-date {
+      font-weight: bold;
+      color: var(--accent);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .timeline-content {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .timeline-content strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+
+    /* 折叠样式 */
+    .collapsible {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chev { transition: transform .2s ease; }
+    .collapsed + .content { display: none; }
+
+    img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      margin-top: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">SQ</div>
+      <div class="title">
+        <h1>Song Qingliang</h1>
+        <p>产品经理 · 电子商务 · 数据分析 · 运营</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Song Qingliang，产品经理</p>
+      <p>电子商务专业背景</p>
+      <p>前线产品经理、后备设计师、一线数据分析师、二线运营推广</p>
+      <p>金融/证券/基金/期货 初学者 · AI学习中</p>
+    </section>
+
+    <section class="card">
+      <h2>推荐的产品和服务</h2>
+      <div class="links">
+        <div class="link-item">
+          <a href="https://www.dropbox.com/referrals/AADHfYSEMhGJR0nRtKBiE_2Y5SXkfXY4w8E?src=global9" target="_blank">Dropbox</a>
+          <span style="color:var(--muted);font-size:13px">文件协作 & 同步</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>作品集</h2>
+      <p><a href="https://xd.adobe.com/view/21454dd8-0a79-4c7e-75cb-db94e6b58c9c-5774/" target="_blank">2018 原型作品 · 交易小程序</a>（访问密码：Pm111111）</p>
+      <p><a href="https://prngmh.axshare.com" target="_blank">2012 原型作品 · 中国象棋</a>（访问密码：zgxq8888）</p>
+      <img src="https://c.snowniu.com/graph/Jietu20191007-042058%402x.jpg" alt="作品截图" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <div class="collapsible" id="toggleTimeline">
+        <h2>项目经历(已脱敏)</h2>
+        <div class="chev">▾</div>
+      </div>
+      <div class="content" id="timelineContent">
+        <div class="timeline">
+          <!-- 2022 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2025.5.15</div>
+            <div class="timeline-content">
+              <strong>8.5上线</strong>
+              <span style="color:#d2691e">对接Amazon VC</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025.3.26</div>
+            <div class="timeline-content">
+              <strong>8.4上线</strong>
+              T项目结算
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025.3.20</div>
+            <div class="timeline-content">
+              <strong>8.3上线</strong>
+              对接toktok美国
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025.3.12</div>
+            <div class="timeline-content">
+              <strong>8.2上线</strong>
+              对接amazon FBA的售后
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025.1.23</div>
+            <div class="timeline-content">
+              <strong>8.1上线</strong>
+              支持渠道信息变更流程
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date"> 2024.12.25</div>
+            <div class="timeline-content">
+              <strong>8.0上线</strong>
+              对接财务中台主体信息
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2024.10.25</div>
+            <div class="timeline-content">
+              <strong>7.9上线</strong>
+              对接amazon结算账单
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.9.10</div>
+            <div class="timeline-content">
+              <strong>7.8上线</strong>
+              非账扣营销费用及保证金优化上线及数据初始化
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.7.25</div>
+            <div class="timeline-content">
+              <strong>7.7上线</strong>
+              联营发票
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.6.27</div>
+            <div class="timeline-content">
+              <strong>7.6上线</strong>
+              渠道信息和流程优化
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.6.12</div>
+            <div class="timeline-content">
+              <strong>7.5上线</strong>
+              <span style="color:#d2691e">对接领星（amazon、walmart）</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.2.1</div>
+            <div class="timeline-content">
+              <strong>7.4上线</strong>
+              SCM增加支持出口业务（结算&对接）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.1.5</div>
+            <div class="timeline-content">
+              <strong>7.3上线</strong>
+              非账扣营销费用及保证金
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023.12.19</div>
+            <div class="timeline-content">
+              <strong>7.2上线</strong>
+              SCM增加支持出口业务
+            </div>
+          </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2023.8.17</div>
+              <div class="timeline-content">
+                <strong>7.1上线</strong>
+                BBC结算的迭代优化（主体、结算项规则）
+              </div>
+            </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023.6.13</div>
+            <div class="timeline-content">
+              <strong>7.0上线</strong>
+              采购返利
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023.3.1</div>
+            <div class="timeline-content">
+              <strong>6.9上线</strong>
+              <span style="color:#d2691e">BBC渠道收款结算</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.11.30</div>
+            <div class="timeline-content">
+              <strong>6.8上线</strong>
+              拼多多补贴计入BBC渠道结算的场景
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.08.25</div>
+            <div class="timeline-content">
+              <strong>新零售1.2需求产品设计</strong>
+              <span style="color:#d2691e">完成</span>（营销-按用户类别定价、商品券等）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.08.25</div>
+            <div class="timeline-content">
+              <strong>6.7上线</strong>
+              cbg抖音直播业务
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.08.10</div>
+            <div class="timeline-content">
+              <strong>6.6上线</strong>
+              奇门、售后（拼多多等平台逆向）、寄售逆向、班牛
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.08.03</div>
+            <div class="timeline-content">
+              <strong>6.5上线</strong>
+              新零售-社区团购优化（订单）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.07.18</div>
+            <div class="timeline-content">
+              <strong>6.4上线</strong>
+              新零售-社团团购-代客下单
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.07.08</div>
+            <div class="timeline-content">
+              <strong>6.3.2上线</strong>
+              bbmall补偿/回款
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.06.15</div>
+            <div class="timeline-content">
+              <strong>6.3.1上线</strong>
+              迦境-bbc
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.06.10</div>
+            <div class="timeline-content">
+              <strong>6.3上线</strong>
+              <span style="color:#d2691e">新零售-社区团购</span>，支持新业务的系统能力
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.04.20</div>
+            <div class="timeline-content">
+              <strong>6.2上线</strong>
+              团长直播
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.03.25</div>
+            <div class="timeline-content">
+              <strong>6.1上线</strong>
+              <span style="color:#d2691e">原始模版导单</span>，提高业务的操作效率
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022.03.10</div>
+            <div class="timeline-content">
+              <strong>6.0上线</strong>
+              <span style="color:#d2691e">BBmall发布（订单+售后、商品、联营采购、寄售、货仓支付/账户）</span>
+            </div>
+          </div>
+          <!-- 2021 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2021.08.10</div>
+            <div class="timeline-content">
+              <strong>订单及订单售后重构大优化</strong>
+              <span style="color:#d2691e">完成产品设计</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021.06.29</div>
+            <div class="timeline-content">
+              <strong>5.8上线</strong>
+              退货售后优化
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021.04.13</div>
+            <div class="timeline-content">
+              <strong>5.4.1上线</strong>
+              入第三方平台仓
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021.04.01</div>
+            <div class="timeline-content">
+              <strong>5.4上线</strong>
+              中台中分离出货仓
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021.01.14</div>
+            <div class="timeline-content">
+              <strong>5.0上线</strong>
+              第三方取消订单和批次增加部门
+            </div>
+          </div>
+          <!-- 2020 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2020.12.29</div>
+            <div class="timeline-content">
+              <strong>4.9上线</strong>
+              对接BB批次
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.12.09</div>
+            <div class="timeline-content">
+              <strong>4.8.1上线</strong>
+              渠道归属部门
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.12.07</div>
+            <div class="timeline-content">
+              <strong>4.8上线</strong>
+              组合商品
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.10.22</div>
+            <div class="timeline-content">
+              <strong>4.7上线</strong>
+              ka自主报价优化
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.10.03</div>
+            <div class="timeline-content">
+              <strong>4.6.1上线</strong>
+              对接智齿工单
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.09.23</div>
+            <div class="timeline-content">
+              <strong>4.5上线</strong>
+              取消第三方订单和BC直邮
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.09.12</div>
+            <div class="timeline-content">
+              <strong>4.3上线</strong>
+              公司主体
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.08.21</div>
+            <div class="timeline-content">
+              <strong>4.2.1上线</strong>
+              结算单扣点
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.08.10</div>
+            <div class="timeline-content">
+              <strong>4.0上线</strong>
+              <span style="color:#d2691e">上线中台（帐号、采购、供应商、渠道、采购结算、信用结算）</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.04.20</div>
+            <div class="timeline-content">
+              <strong>2.7上线</strong>
+              渠道管理
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020.01.15</div>
+            <div class="timeline-content">
+              <strong>2.2上线</strong>
+              站内信、app消息推送、文章(BBC)
+            </div>
+          </div>
+          <!-- 2019 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2019.11.15</div>
+            <div class="timeline-content">
+              <strong>销售中心crm需求</strong>
+              <span style="color:#d2691e">完成产品设计</span>（web端和小程序端）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.05.30</div>
+            <div class="timeline-content">
+              <strong>4.0上线</strong>
+              媒体主小程序（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.05.16</div>
+            <div class="timeline-content">
+              <strong>3.9.1上线</strong>
+              方案详情、我的、分享等页面功能体验优化（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.05.09</div>
+            <div class="timeline-content">
+              <strong>3.9上线</strong>
+              帮助中心（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.04.25</div>
+            <div class="timeline-content">
+              <strong>3.8上线</strong>
+              退款-整单退款、部分退款（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.04.19</div>
+            <div class="timeline-content">
+              <strong>3.7上线</strong>
+              满减、评价、反馈、微信发票（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.04.12</div>
+            <div class="timeline-content">
+              <strong>3.6上线</strong>
+              优惠券（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.03.21</div>
+            <div class="timeline-content">
+              <strong>3.5上线</strong>
+              智选媒体（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.03.07</div>
+            <div class="timeline-content">
+              <strong>3.4上线</strong>
+              <span style="color:#d2691e">小程序交易平台（Platform）</span>，满足广告主便捷下单场景
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019.01.22</div>
+            <div class="timeline-content">
+              <strong>3.3上线</strong>
+              抢购抽奖（Platform）
+            </div>
+          </div>
+          <!-- 2018 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2018.12.20</div>
+            <div class="timeline-content">
+              <strong>3.2.1上线</strong>
+              商圈（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.12.06</div>
+            <div class="timeline-content">
+              <strong>3.2上线</strong>
+              订单日历、方案分享、并联媒体主（SaaS、Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.11.27</div>
+            <div class="timeline-content">
+              <strong>3.1上线</strong>
+              分步骤付款、部分退款、投诉、评价（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.10.19</div>
+            <div class="timeline-content">
+              <strong>3.0上线</strong>
+              web交易平台（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.10.15</div>
+            <div class="timeline-content">
+              <strong>2.9.15上线</strong>
+              图片获取位置（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.09.25</div>
+            <div class="timeline-content">
+              <strong>2.9.12上线</strong>
+              方案占用（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.09.03</div>
+            <div class="timeline-content">
+              <strong>2.9.10上线</strong>
+              地下车库合并导出（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.08.23</div>
+            <div class="timeline-content">
+              <strong>2.9.9上线</strong>
+              媒介人注册认证（Platform）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.08.13</div>
+            <div class="timeline-content">
+              <strong>2.9.5上线</strong>
+              合同、财务、消息设置（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.07.11</div>
+            <div class="timeline-content">
+              <strong>2.9.1上线</strong>
+              性能优化（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.06.29</div>
+            <div class="timeline-content">
+              <strong>2.9上线</strong>
+              <span style="color:#d2691e">供销管理（SaaS）</span>，满足媒体主分销场景
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.05.10</div>
+            <div class="timeline-content">
+              <strong>2.8上线</strong>
+              数据中心上刊、订单、点位媒体（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.04.12</div>
+            <div class="timeline-content">
+              <strong>2.7.1上线</strong>
+              地图框选、到期批量设置、移动端媒体排期页面（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.04.03</div>
+            <div class="timeline-content">
+              <strong>2.7上线</strong>
+              LED、媒体自定义字段（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.03.01</div>
+            <div class="timeline-content">
+              <strong>2.6.1上线</strong>
+              排除资源、申请试用（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.02.08</div>
+            <div class="timeline-content">
+              <strong>2.6上线</strong>
+              组织项目、部门权限、完工报告（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.01.11</div>
+            <div class="timeline-content">
+              <strong>2.5.2上线</strong>
+              按电梯智能配点（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018.01.08</div>
+            <div class="timeline-content">
+              <strong>2.5.1上线</strong>
+              资源名称、点位/资源导出、方案支持多个区域（SaaS）
+            </div>
+          </div>
+          <!-- 2017 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2017.12.29</div>
+            <div class="timeline-content">
+              <strong>2.5上线</strong>
+              订单管理（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017.12.11</div>
+            <div class="timeline-content">
+              <strong>2.4.3上线</strong>
+              电梯支持汉字、必填/选填优化（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017.12.08</div>
+            <div class="timeline-content">
+              <strong>2.4.2上线</strong>
+              导出概况表、清空购物车（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017.12.01</div>
+            <div class="timeline-content">
+              <strong>2.4.1上线</strong>
+              电梯参数、智能调点（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017.11.14</div>
+            <div class="timeline-content">
+              <strong>2.4上线</strong>
+              方案管理、客户管理（SaaS）
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017.03.15</div>
+            <div class="timeline-content">
+              <strong>商城线下核销上线</strong>
+            </div>
+          </div>
+          <!-- 2016 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2016.08.03</div>
+            <div class="timeline-content">
+              <strong>商城复购上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016.05.26</div>
+            <div class="timeline-content">
+              <strong>商城积分上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016.04.22</div>
+            <div class="timeline-content">
+              <strong>商城战队上线</strong>
+            </div>
+          </div>
+          <!-- 2015 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2015.10.15</div>
+            <div class="timeline-content">
+              <strong style="color:#c0392b">新版商城wxrrd.com（人人店5.0）上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2015.07.15</div>
+            <div class="timeline-content">
+              <strong>商城商家版app上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2015.05.15</div>
+            <div class="timeline-content">
+              <strong>优惠券、用户等级、用户积分上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2015.03.28</div>
+            <div class="timeline-content">
+              <strong>商城代收代付系统（交易财务结算）上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2015.03.28</div>
+            <div class="timeline-content">
+              <strong>代付上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2015.01.12</div>
+            <div class="timeline-content">
+              <strong>打印快递单发货单上线</strong>
+            </div>
+          </div>
+          <!-- 2014 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2014.12.31</div>
+            <div class="timeline-content">
+              <strong style="color:#c0392b">微巴代收款系统上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.12.03</div>
+            <div class="timeline-content">
+              <strong>秒杀上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.11.22</div>
+            <div class="timeline-content">
+              <strong>硬件采购系统上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.09.17</div>
+            <div class="timeline-content">
+              <strong>微外卖上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.08.21</div>
+            <div class="timeline-content">
+              <strong>微政务上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.08.15</div>
+            <div class="timeline-content">
+              <strong>满减/满送上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.07.25</div>
+            <div class="timeline-content">
+              <strong>会员卡条码上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.06.25</div>
+            <div class="timeline-content">
+              <strong>推广返利上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.06.17</div>
+            <div class="timeline-content">
+              <strong>海外服务器迁回国内上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.05.29</div>
+            <div class="timeline-content">
+              <strong>微点菜、好友砍价上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.05.27</div>
+            <div class="timeline-content">
+              <strong>微直播上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.05.23</div>
+            <div class="timeline-content">
+              <strong>优惠码上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.05.09</div>
+            <div class="timeline-content">
+              <strong>虚拟物品自动发货上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.05.02</div>
+            <div class="timeline-content">
+              <strong>微配送上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.04.24</div>
+            <div class="timeline-content">
+              <strong>货到付款、到店自提上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.04.14</div>
+            <div class="timeline-content">
+              <strong>微报名上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.03.28</div>
+            <div class="timeline-content">
+              <strong>照片打印机上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.03.27</div>
+            <div class="timeline-content">
+              <strong style="color:#c0392b">微商城标准版上线(3.0)</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014.03.17</div>
+            <div class="timeline-content">
+              <strong style="color:#c0392b">系统管理总后台上线</strong>
+            </div>
+          </div>
+          <!-- 2013 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2013.12.20</div>
+            <div class="timeline-content">
+              <strong>微贺卡上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2013.12.16</div>
+            <div class="timeline-content">
+              <strong>微会员上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2013.11.06</div>
+            <div class="timeline-content">
+              <strong style="color:#c0392b">微店铺上线(1.0)</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2013.02</div>
+            <div class="timeline-content">
+              <strong>斗地主比赛上线</strong>
+            </div>
+          </div>
+          <!-- 2012 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2012.12</div>
+            <div class="timeline-content">
+              <strong style="color:#c0392b">中国象棋上线</strong>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2012.12</div>
+            <div class="timeline-content">
+              <strong>斗地主游戏上线</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Photo & 分享</h2>
+      <p>📷 <a href="https://500px.com/carver6" target="_blank">500px</a> | <a href="https://www.flickr.com/photos/carver" target="_blank">Flickr</a></p>
+      <p>📝 <a href="https://workflowy.com/s/7f66748a4714/2S32xRzeItaRkvzS#/b8a3d2190338" target="_blank">Workflowy 笔记</a></p>
+      <p>🎬 <a href="https://www.imdb.com/list/ls001577067/?sort=list_order,desc&st_dt=&mode=detail&page=1" target="_blank">IMDB 电影列表</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email：<a href="mailto:pm@songqingliang.com">pm@songqingliang.com</a></p>
+      <p>公开日历：<a href="https://calendar.zoho.com/zc/ui/embed/#calendar=zz080112305098fcbdce00f35915033dc8e3f28ba220b9dd43f4641e16ebcae413e4a33c7cddf5dbcf80911ea35708899774932cc0&mode=pub&timezone=Asia/Shanghai" target="_blank">Public Calendar</a></p>
+    </section>
+
+<section class="card">
+  <h2>读过的书</h2>
+
+  <!-- Goodreads Widget 保留 -->
+  <style type="text/css" media="screen">
+    .gr_custom_container_1545640457 {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #111827;
+      width: 100%;
+      max-width: 600px;
+    }
+    .gr_custom_header_1545640457 {
+      border-bottom: 1px solid #e5e7eb;
+      width: 100%;
+      margin-bottom: 8px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #2563eb;
+    }
+    .gr_custom_each_container_1545640457 {
+      clear: both;
+      margin-bottom: 10px;
+      overflow: auto;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #ddd;
+    }
+    .gr_custom_book_container_1545640457 {
+      overflow: hidden;
+      height: 60px;
+      float: left;
+      margin-right: 6px;
+      width: 39px;
+    }
+    .gr_custom_title_1545640457 a {
+      font-size: 14px;
+      font-weight: 500;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .gr_custom_title_1545640457 a:hover { text-decoration: underline; }
+    .gr_custom_author_1545640457 {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .gr_custom_tags_1545640457 {
+      font-size: 10px;
+      color: gray;
+    }
+  </style>
+
+  <div id="gr_custom_widget_1545640457">
+    <div class="gr_custom_container_1545640457">
+      <h2 class="gr_custom_header_1545640457">
+        <a style="text-decoration: none;" rel="nofollow" 
+           href="https://www.goodreads.com/review/list/2055861-carver?shelf=read&utm_medium=api&utm_source=custom_widget">
+           最近读过
+        </a>
+      </h2>
+      <div class="gr_custom_each_container_1545640457">
+        <div class="gr_custom_title_1545640457">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/1626952150">从0到1: 开启商业与未来的秘密</a>
+        </div>
+        <div class="gr_custom_author_1545640457">by Peter Thiel</div>
+      </div>
+      <div class="gr_custom_each_container_1545640457">
+        <div class="gr_custom_title_1545640457">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/2557849925">原则</a>
+        </div>
+        <div class="gr_custom_author_1545640457">by Ray Dalio</div>
+      </div>
+      <div class="gr_custom_each_container_1545640457">
+        <div class="gr_custom_title_1545640457">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/1790100309">微交互: 细节设计成就卓越产品</a>
+        </div>
+        <div class="gr_custom_author_1545640457">by Dan Saffer</div>
+      </div>
+      <div class="gr_custom_each_container_1545640457">
+        <div class="gr_custom_title_1545640457">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/2327920965">用户体验要素：以用户为中心的产品设计</a>
+        </div>
+        <div class="gr_custom_author_1545640457">by Jesse James Garrett</div>
+      </div>
+      <div class="gr_custom_each_container_1545640457">
+        <div class="gr_custom_title_1545640457">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/1594888553">永恒的终结</a>
+        </div>
+        <div class="gr_custom_author_1545640457">by Isaac Asimov</div>
+      </div>
+      <br style="clear: both"/>
+      <center>
+        <a rel="nofollow" href="https://www.goodreads.com/">
+          <img alt="goodreads.com" style="border:0" 
+               src="https://www.goodreads.com/images/widget/widget_logo.gif" />
+        </a>
+      </center>
+    </div>
+  </div>
+
+  <script src="https://www.goodreads.com/review/custom_widget/2055861.read?cover_position=left&cover_size=small&num_books=5&order=d&shelf=read&show_author=1&show_cover=0&show_rating=0&show_review=1&show_tags=0&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1545640457&widget_text_color=000000&widget_title_size=medium&widget_width=medium" 
+          type="text/javascript" charset="utf-8"></script>
+</section>
+
+
+    <footer>
+      © 2025 Song Qingliang · m.songqingliang.com
+    </footer>
+  </div>
+
+  <script>
+    // 折叠功能
+    (function(){
+      const toggle = document.getElementById('toggleTimeline');
+      const content = document.getElementById('timelineContent');
+      function setState(open){
+        if(open){
+          toggle.classList.remove('collapsed');
+          content.style.display = 'block';
+          toggle.querySelector('.chev').style.transform = 'rotate(180deg)';
+        } else {
+          toggle.classList.add('collapsed');
+          content.style.display = 'none';
+          toggle.querySelector('.chev').style.transform = 'rotate(0)';
+        }
+      }
+      setState(false);
+      toggle.addEventListener('click',()=> setState(content.style.display==='none'));
+    })();
+
+    // 时间轴动画
+    const items = document.querySelectorAll('.timeline-item');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    items.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
