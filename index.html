@@ -207,10 +207,11 @@
     </section>
 
     <section class="card">
-      <div class="collapsible" id="toggleTimeline">
-        <h2>项目经历(已脱敏)</h2>
-        <div class="chev">▾</div>
-      </div>
+<div class="collapsible" id="toggleTimeline">
+  <h2>项目经历(已脱敏)</h2>
+  <span class="toggle-text" style="margin-left:8px;color:#2563eb;cursor:pointer;">展开</span>
+  <div class="chev">▾</div>
+</div>
       <div class="content" id="timelineContent">
         <div class="timeline">
           <!-- 2022 -->
@@ -1113,23 +1114,26 @@
 
   <script>
     // 折叠功能
-    (function(){
-      const toggle = document.getElementById('toggleTimeline');
-      const content = document.getElementById('timelineContent');
-      function setState(open){
-        if(open){
-          toggle.classList.remove('collapsed');
-          content.style.display = 'block';
-          toggle.querySelector('.chev').style.transform = 'rotate(180deg)';
-        } else {
-          toggle.classList.add('collapsed');
-          content.style.display = 'none';
-          toggle.querySelector('.chev').style.transform = 'rotate(0)';
-        }
-      }
-      setState(false);
-      toggle.addEventListener('click',()=> setState(content.style.display==='none'));
-    })();
+(function(){
+  const toggle = document.getElementById('toggleTimeline');
+  const content = document.getElementById('timelineContent');
+  const text = toggle.querySelector('.toggle-text');
+  function setState(open){
+    if(open){
+      toggle.classList.remove('collapsed');
+      content.style.display = 'block';
+      toggle.querySelector('.chev').style.transform = 'rotate(180deg)';
+      text.textContent = '折叠';
+    } else {
+      toggle.classList.add('collapsed');
+      content.style.display = 'none';
+      toggle.querySelector('.chev').style.transform = 'rotate(0)';
+      text.textContent = '展开';
+    }
+  }
+  setState(false);
+  toggle.addEventListener('click',()=> setState(content.style.display==='none'));
+})();
 
     // 时间轴动画
     const items = document.querySelectorAll('.timeline-item');
