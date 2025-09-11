@@ -153,6 +153,12 @@
       color: var(--muted);
       margin-top: 20px;
     }
+    .toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* 控制文字和箭头的距离，可自行调整 */
+  margin-left: auto; /* 推到最右侧 */
+}
   </style>
 </head>
 <body>
@@ -209,8 +215,11 @@
     <section class="card">
 <div class="collapsible" id="toggleTimeline">
   <h2>项目经历(已脱敏)</h2>
-  <span class="toggle-text" style="margin-left:8px;color:#2563eb;cursor:pointer;">展开</span>
-  <div class="chev">▾</div>
+  <div class="toggle-group">
+    <span class="toggle-text" style="color:#2563eb;cursor:pointer;">展开</span>
+    <div class="chev">▾</div>
+  </div>
+</div>
 </div>
       <div class="content" id="timelineContent">
         <div class="timeline">
